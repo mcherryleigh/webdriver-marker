@@ -7,6 +7,9 @@ var driver = new webdriver.Builder()
     .usingServer('http://192.168.99.100:4444/wd/hub')//used for my docker container can comment out for localhost or change
     .build();
 
+var Marker = require('../index.js')
+//var Marker = require('webdriver-marker')
+
 //regular marker with no additions to the default preferences
 var defaultMarker = new Marker(driver)
 //greenMarker gets created with overrides default prefs for EVERY time it is called
