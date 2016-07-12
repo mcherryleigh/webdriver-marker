@@ -9,9 +9,8 @@ var driver = new webdriver.Builder()
 
 var Marker = require('../index.js')
 //var Marker = require('webdriver-marker')
-
 //regular marker with no additions to the default preferences
-var defaultMarker = new Marker(driver)
+var defaultMarker = new Marker(driver);
 //greenMarker gets created with overrides default prefs for EVERY time it is called
 var greenMarker = new Marker(driver, {background:'green', showFor:5000})
 
@@ -24,7 +23,7 @@ driver.sleep(1000)
 greenMarker.removeHighlight(By.name('btnG'))
 driver.sleep(1000)
 //add the default greenMarker style then automatically remove them after 2000ms
-greenMarker.highlightElementFor(By.name('btnG'){showFor:2000})
+greenMarker.highlightElementFor(By.name('btnG'), {showFor:2000})
 driver.sleep(5000)
 //defaultMarker runs with the styles from the class constructor
 defaultMarker.highlightElement({name:'btnG'}).click();

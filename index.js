@@ -1,6 +1,6 @@
 let _ = require('lodash');
 /** Class representing a Marker. */
-class Marker {
+module.exports = class Marker {
     /**
      * Create a marker.
      * @param {WebDriver} driver - The webdriver instance controlling the session you want to highlight element in.
@@ -111,5 +111,3 @@ class Marker {
         })
     }
 }
-
-exports.module = Marker;
