@@ -1,0 +1,28 @@
+{
+  "name": "webdriver-marker",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Highlight WebElements while running selenium-webdriver based scripts for increased visibility or debugging",
+  "author": "Michael Cherry-Leigh",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcherryleigh/webdriver-marker"
+  },
+  "bugs": {
+    "url": "https://github.com/mcherryleigh/webdriver-marker/issues"
+  },
+  "keywords": [
+    "selenium-webdriver", "webelement", "hightlight",
+    "webdriver", "selenium",
+    "testing", "end to end", "e2e",
+    "debug", "debugging", "utility"
+  ],
+  "dependencies": {
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "selenium-webdriver": "*"
+  }
+}
